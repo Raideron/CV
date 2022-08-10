@@ -39,9 +39,11 @@ const App = (props: AppProps) => {
 
 	const drawer = (
 		<Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-			<Typography variant="h6" sx={{ my: 2 }}>
-				CV
-			</Typography>
+			<Link href={`/`} passHref>
+				<Typography variant="h6" sx={{ my: 2 }}>
+					CV
+				</Typography>
+			</Link>
 			<Divider />
 			<List>
 				{projects.map((project) => (
