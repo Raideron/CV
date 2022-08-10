@@ -1,6 +1,5 @@
 import {
 	Card,
-	CardMedia,
 	CardContent,
 	Typography,
 	CardActions,
@@ -8,6 +7,7 @@ import {
 } from "@mui/material";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Project } from "@root/types/project";
 
 export interface CvCardProps {
@@ -22,16 +22,7 @@ export const CvCard: React.FC<CvCardProps> = (props) => (
 			flexDirection: "column",
 		}}
 	>
-		<CardMedia
-			component="img"
-			sx={
-				{
-					// 16:9
-					// pt: "56.25%",
-				}
-			}
-			image={props.project.image}
-		/>
+		<Image src={props.project.image} layout="responsive" />
 		<CardContent sx={{ flexGrow: 1 }}>
 			<Typography gutterBottom variant="h5" component="h2">
 				{props.project.displayName}

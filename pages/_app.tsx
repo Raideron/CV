@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React from "react";
 import { AppProps } from "next/app";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
@@ -7,10 +7,8 @@ import "@fontsource/roboto/700.css";
 import { ThemeProvider } from "@emotion/react";
 import {
 	AppBar,
-	Avatar,
 	Box,
 	Button,
-	Container,
 	createTheme,
 	CssBaseline,
 	Divider,
@@ -20,14 +18,11 @@ import {
 	ListItem,
 	ListItemButton,
 	ListItemText,
-	Menu,
-	MenuItem,
 	Toolbar,
-	Tooltip,
 	Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import pages from ".";
+import Link from "next/link";
 import { projects } from "@root/constants/projects";
 
 const theme = createTheme();
@@ -75,28 +70,35 @@ const App = (props: AppProps) => {
 					>
 						<MenuIcon />
 					</IconButton>
-					<Typography
-						variant="h6"
-						noWrap
-						component="a"
-						href="/"
-						sx={{
-							mr: 2,
-							display: { xs: "none", sm: "flex" },
-							fontFamily: "monospace",
-							fontWeight: 700,
-							letterSpacing: ".3rem",
-							color: "inherit",
-							textDecoration: "none",
-						}}
-					>
-						CV
-					</Typography>
+					<Link href="/" passHref>
+						<Typography
+							variant="h6"
+							noWrap
+							component="a"
+							sx={{
+								mr: 2,
+								display: { xs: "none", sm: "flex" },
+								fontFamily: "monospace",
+								fontWeight: 700,
+								letterSpacing: ".3rem",
+								color: "inherit",
+								textDecoration: "none",
+							}}
+						>
+							CV
+						</Typography>
+					</Link>
 					<Box sx={{ display: { xs: "none", sm: "inherit" } }}>
 						{projects.map((project) => (
-							<Button key={project.name} sx={{ color: "#fff" }}>
-								{project.displayName}
-							</Button>
+							<Link
+								key={project.name}
+								href={`/projects/${project.name}`}
+								passHref
+							>
+								<Button sx={{ color: "#fff" }}>
+									{project.displayName}
+								</Button>
+							</Link>
 						))}
 					</Box>
 				</Toolbar>

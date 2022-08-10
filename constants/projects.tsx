@@ -1,11 +1,12 @@
 import React from "react";
+import PrintableHeroesImg from "../public/PrintableHeroes.jpg";
 import { Project } from "@root/types/project";
 
 export const projects: Project[] = [
 	{
 		displayName: "PrintableHeroes",
 		name: "printableheroes",
-		image: "/PrintableHeroes.jpg",
+		image: PrintableHeroesImg,
 		website: "https://printableheroes.com",
 		shortDescription: (
 			<p>
