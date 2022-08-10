@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { AppProps } from "next/app";
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
+// import "@fontsource/roboto/300.css";
+// import "@fontsource/roboto/400.css";
+// import "@fontsource/roboto/500.css";
+// import "@fontsource/roboto/700.css";
 import { ThemeProvider } from "@emotion/react";
 import {
 	AppBar,
@@ -13,6 +13,7 @@ import {
 	Toolbar,
 	Typography,
 } from "@mui/material";
+
 const theme = createTheme();
 
 const App = (props: AppProps) => {
