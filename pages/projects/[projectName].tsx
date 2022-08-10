@@ -1,5 +1,5 @@
 import React from "react";
-import { NextPage } from "next";
+import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { useRouter } from "next/router";
 import { Typography, Box, Container, Stack, Button } from "@mui/material";
 import { projects } from "@root/constants/projects";
@@ -62,5 +62,16 @@ const ProjectPage: NextPage = () => {
 		</main>
 	);
 };
+
+export const getStaticPaths: GetStaticPaths = () => ({
+	paths: projects.map((project) => ({
+		params: { projectName: project.name },
+	})),
+	fallback: false, // can also be true or 'blocking'
+});
+
+export const getStaticProps: GetStaticProps = () => ({
+	props: {},
+});
 
 export default ProjectPage;
