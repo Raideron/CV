@@ -1,0 +1,9 @@
+{
+	"jest.jestCommandLine": "npm run test --",
+	"search.exclude": {
+		".next": true
+	},
+	"files.eol": "\n",
+	"typescript.tsdk": "node_modules\\typescript\\lib",
+	"typescript.preferences.quoteStyle": "double"
+}
