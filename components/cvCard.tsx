@@ -22,7 +22,13 @@ export const CvCard: React.FC<CvCardProps> = (props) => (
 			flexDirection: "column",
 		}}
 	>
-		<Image src={props.project.image} layout="responsive" />
+		<Image
+			src={props.project.image}
+			layout="responsive"
+			objectFit="cover"
+			width={16}
+			height={9}
+		/>
 		<CardContent sx={{ flexGrow: 1 }}>
 			<Typography gutterBottom variant="h5" component="h2">
 				{props.project.displayName}

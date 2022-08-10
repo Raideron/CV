@@ -45,7 +45,7 @@ const ProjectPage: NextPage = () => {
 								href={project.website}
 								target="_blank"
 							>
-								View website
+								Website
 							</Button>
 						</Stack>
 					)}
