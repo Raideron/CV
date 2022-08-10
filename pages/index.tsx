@@ -1,6 +1,5 @@
 import React from "react";
-import MiniBrowse from "./minis/index";
 
-const Page: React.FunctionComponent = () => <MiniBrowse />;
+const Page: React.FC = () => <div>Hello World</div>;
 
 export default Page;

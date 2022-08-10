@@ -1,7 +1,6 @@
 {
 	"env": {
 		"browser": true,
-		"jest/globals": true,
 		"es6": true
 	},
 	"extends": [
@@ -25,7 +24,6 @@
 	"plugins": [
 		"@typescript-eslint",
 		"import",
-		"jest",
 		"react-perf",
 		"react",
 		"unicorn",
