@@ -1,34 +1,131 @@
 import React, { useMemo } from "react";
 import { AppProps } from "next/app";
-// import "@fontsource/roboto/300.css";
-// import "@fontsource/roboto/400.css";
-// import "@fontsource/roboto/500.css";
-// import "@fontsource/roboto/700.css";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
 import { ThemeProvider } from "@emotion/react";
 import {
 	AppBar,
+	Avatar,
 	Box,
+	Button,
+	Container,
 	createTheme,
 	CssBaseline,
+	Divider,
+	Drawer,
+	IconButton,
+	List,
+	ListItem,
+	ListItemButton,
+	ListItemText,
+	Menu,
+	MenuItem,
 	Toolbar,
+	Tooltip,
 	Typography,
 } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+import pages from ".";
+import { projects } from "@root/constants/projects";
 
 const theme = createTheme();
 
 const App = (props: AppProps) => {
 	const { Component, pageProps } = props;
 
+	// const { window } = props;
+	const [mobileOpen, setMobileOpen] = React.useState(false);
+
+	const handleDrawerToggle = () => {
+		setMobileOpen(!mobileOpen);
+	};
+
+	const drawer = (
+		<Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+			<Typography variant="h6" sx={{ my: 2 }}>
+				CV
+			</Typography>
+			<Divider />
+			<List>
+				{projects.map((project) => (
+					<ListItem key={project.name} disablePadding>
+						<ListItemButton sx={{ textAlign: "center" }}>
+							<ListItemText primary={project.displayName} />
+						</ListItemButton>
+					</ListItem>
+				))}
+			</List>
+		</Box>
+	);
+
 	return (
 		<ThemeProvider theme={theme}>
 			<CssBaseline />
-			<AppBar position="relative">
+
+			<AppBar component="nav" position="relative">
 				<Toolbar>
-					<Typography variant="h6" color="inherit" noWrap>
-						Curriculum Vitae
+					<IconButton
+						color="inherit"
+						aria-label="open drawer"
+						edge="start"
+						onClick={handleDrawerToggle}
+						sx={{ mr: 2, display: { sm: "none" } }}
+					>
+						<MenuIcon />
+					</IconButton>
+					<Typography
+						variant="h6"
+						noWrap
+						component="a"
+						href="/"
+						sx={{
+							mr: 2,
+							display: { xs: "none", sm: "flex" },
+							fontFamily: "monospace",
+							fontWeight: 700,
+							letterSpacing: ".3rem",
+							color: "inherit",
+							textDecoration: "none",
+						}}
+					>
+						CV
 					</Typography>
+					<Box sx={{ display: { xs: "none", sm: "inherit" } }}>
+						{projects.map((project) => (
+							<Button key={project.name} sx={{ color: "#fff" }}>
+								{project.displayName}
+							</Button>
+						))}
+					</Box>
 				</Toolbar>
 			</AppBar>
+			<Box component="nav">
+				<Drawer
+					container={
+						typeof window !== "undefined"
+							? window.document.body
+							: undefined
+					}
+					variant="temporary"
+					open={mobileOpen}
+					onClose={handleDrawerToggle}
+					ModalProps={{
+						keepMounted: true, // Better open performance on mobile.
+					}}
+					sx={{
+						display: { xs: "block", sm: "none" },
+						"& .MuiDrawer-paper": {
+							boxSizing: "border-box",
+							width: 240,
+						},
+					}}
+				>
+					{drawer}
+				</Drawer>
+			</Box>
+
 			<Component {...pageProps} />
 			<Box sx={{ bgcolor: "background.paper", p: 6 }} component="footer">
 				<Typography variant="h6" align="center" gutterBottom>

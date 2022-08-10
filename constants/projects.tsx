@@ -10,9 +10,7 @@ export const projects: Project[] = [
 		shortDescription: (
 			<p>
 				PrintableHeroes is een website waar mensen afbeeldingen kunnen
-				doorzoeken en downloaden voor Dungeons & Dragons. Deze
-				afbeeldingen kunnen worden geprint en in in elkaar gezet worden
-				als een soort pionnetjes om het spel te spelen.
+				doorzoeken en downloaden voor Dungeons & Dragons.
 			</p>
 		),
 		longDescription: (
