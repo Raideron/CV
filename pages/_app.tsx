@@ -45,11 +45,17 @@ const App = (props: AppProps) => {
 			<Divider />
 			<List>
 				{projects.map((project) => (
-					<ListItem key={project.name} disablePadding>
-						<ListItemButton sx={{ textAlign: "center" }}>
-							<ListItemText primary={project.displayName} />
-						</ListItemButton>
-					</ListItem>
+					<Link
+						key={project.name}
+						href={`/projects/${project.name}`}
+						passHref
+					>
+						<ListItem disablePadding>
+							<ListItemButton sx={{ textAlign: "center" }}>
+								<ListItemText primary={project.displayName} />
+							</ListItemButton>
+						</ListItem>
+					</Link>
 				))}
 			</List>
 		</Box>
