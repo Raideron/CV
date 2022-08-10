@@ -7,6 +7,7 @@ import {
 	Button,
 } from "@mui/material";
 import React from "react";
+import Link from "next/link";
 import { Project } from "@root/types/project";
 
 export interface CvCardProps {
@@ -38,9 +39,9 @@ export const CvCard: React.FC<CvCardProps> = (props) => (
 			<Typography>{props.project.shortDescription}</Typography>
 		</CardContent>
 		<CardActions>
-			<Button size="medium" href={`/projects/${props.project.name}`}>
-				View
-			</Button>
+			<Link href={`/projects/${props.project.name}`} passHref>
+				<Button size="medium">View</Button>
+			</Link>
 		</CardActions>
 	</Card>
 );
