@@ -3,6 +3,7 @@ import PrintableHeroesImg from "../public/PrintableHeroes.jpg";
 import SmartLinkImg from "../public/SmartLink2.png";
 import CertusImg from "../public/certus.jpg";
 import IrisImg from "../public/iris.png";
+import ConnectedGardenImg from "../public/connectedgarden.jpg";
 import { Project } from "@root/types/project";
 
 export const projects: Project[] = [
@@ -22,16 +23,16 @@ export const projects: Project[] = [
 		shortDescription: (
 			<p>
 				PrintableHeroes is een website waar mensen afbeeldingen kunnen
-				doorzoeken en downloaden voor Dungeons & Dragons.
+				doorzoeken en downloaden voor Dungeons &amp; Dragons.
 			</p>
 		),
 		longDescription: (
 			<>
 				<p>
 					PrintableHeroes is een website waar mensen afbeeldingen
-					kunnen doorzoeken en downloaden voor Dungeons & Dragons.
-					Deze afbeeldingen kunnen worden geprint en in in elkaar
-					gezet worden als een soort pionnetjes om het spel te spelen.{" "}
+					kunnen doorzoeken en downloaden voor Dungeons &amp; Dragons.
+					Deze afbeeldingen kunnen worden geprint en in elkaar gezet
+					worden als een soort pionnetjes om het spel te spelen.{" "}
 					<a
 						href={"https://printableheroes.com/gallery"}
 						target="_blank"
@@ -51,17 +52,12 @@ export const projects: Project[] = [
 
 				<p>
 					Ik ben de enige developer ben op dit project. Daarom heb ik
-					de vrijheid om de nieuwste technieken uit te proberen. De
-					meest belangrijkste technieken die ik momenteel gebruik
-					zijn:
-					<ul>
-						<li>React</li>
-						<li>Next.JS</li>
-						<li>Bootstrap</li>
-						<li>.NET</li>
-						<li>PostgreSQL</li>
-						<li>Azure Cloud Services</li>
-					</ul>
+					de vrijheid om de nieuwste technieken uit te proberen.
+					Momenteel gebruik ik React, Next.JS en TypeScript voor de
+					frontend. Hierbij maak ik ook gebruik van de Bootstrap
+					component library. Voor de backend gebruik ik .NET om de API
+					te bouwen. Deze is verbonden met een PostgreSQL database. De
+					volledige applicatie wordt gehost met Azure Cloud Services.
 				</p>
 
 				<p>
@@ -88,7 +84,7 @@ export const projects: Project[] = [
 					werken aan het portaal dat in React is gemaakt en de
 					bijbehorende API die is gemaakt met .NET Core 2.1. De API
 					werkte samen met een SQL server database en verschillende
-					externe API’s om de benodigde data aan de gebruiker te
+					externe API&apos;s om de benodigde data aan de gebruiker te
 					kunnen tonen.
 				</p>
 			</>
@@ -99,7 +95,7 @@ export const projects: Project[] = [
 					Smartlink 2.0 is een project voor Atlas Copco. Atlas Copco
 					is een bedrijf dat luchtcompressoren bouwt. Om deze
 					compressoren te monitoren kunnen klanten van Atlas Copco een
-					web portaal gebruiken dat informatie toont doormiddel van
+					webportaal gebruiken dat informatie toont doormiddel van
 					onder andere grafieken en tabellen. Het bestaande portaal,
 					Smartlink 1, was erg langzaam en moest worden vervangen door
 					Smartlink 2.0.
@@ -109,7 +105,7 @@ export const projects: Project[] = [
 					werken aan het portaal dat in React is gemaakt en de
 					bijbehorende API die is gemaakt met .NET Core 2.1. De API
 					werkte samen met een SQL server database en verschillende
-					externe API’s om de benodigde data aan de gebruiker te
+					externe API&apos;s om de benodigde data aan de gebruiker te
 					kunnen tonen.
 				</p>
 				<p>
@@ -270,6 +266,76 @@ export const projects: Project[] = [
 					het eerst de kans gekregen om een team te begeleiden in
 					Scrum concepten. Dit vond ik erg leuk om te doen en hoop die
 					kans vaker te krijgen.
+				</p>
+			</>
+		),
+	},
+	{
+		name: "connectedgarden",
+		displayName: "Connected Garden",
+		image: ConnectedGardenImg,
+		startDate: new Date(2016, 9 - 1),
+		endDate: new Date(2017, 2 - 1),
+		shortDescription: (
+			<>
+				<p>
+					Voor mijn eerste stage heb ik een webportaal gemaakt (Ruby
+					on Rails) dat gebruikt kon worden om tuinen te monitoren met
+					de sensoren daarin. Ik heb MQTT gebruikt om berichten van de
+					sensoren naar een SQL database te sturen. Deze data kon
+					vervolgens worden ingezien in het webportaal. De applicatie
+					kon de gebruikers dan een notificatie sturen wanneer ze hun
+					planten water moesten geven. Deze notificatie werd gegeneerd
+					aan de hand van de sensordata en data van Open Weather Maps.
+				</p>
+			</>
+		),
+		longDescription: (
+			<>
+				<p>
+					Connected Garden was een nieuwe startup die mensen wou
+					helpen om hun tuin te onderhouden. Connected Garden stond al
+					in contact met een groep studenten die een regensensor
+					hadden ontwikkeld zonder bewegende onderdelen. Deze
+					regen&shy;sensoren werden gecombineerd met sensoren die de
+					vochtigheid van de grond konden meten om de gebruiker te
+					informeren.
+				</p>
+				<p>
+					Mijn taak was om een systeem te ontwikkelen dat de data van
+					de sensoren kon opslaan. Deze data moest vervolgens getoond
+					worden op een gebruiksvriendelijk manier. Ik was vrij om
+					suggesties te doen over het verwerken en tonen van de data.
+				</p>
+				<p>
+					Ik heb MQTT en Ruby on Rails gebruikt om de data van de
+					sensoren op te slaan in een SQL database. Met Ruby on Rails
+					is een webapplicatie gebouwd waarin de gebruikers konden
+					inloggen en de staat van hun tuin konden monitoren. Ik heb
+					de applicatie zo gebouwd dat de gebruikers een notificatie
+					zouden krijgen wanneer ze hun planten water moesten geven.
+					De notificatie werd verstuurd aan de hand van data die
+					afkomstig was van de sensoren,{" "}
+					<a
+						href="https://openweathermap.org/"
+						target="_blank"
+						rel="noreferrer"
+					>
+						Open Weather Map
+					</a>{" "}
+					en het type plant. Het systeem was zou gebouwd dat
+					gebruikers per sectie van hun tuin konden aangeven welke
+					planten aanwezig waren. Ik heb de applicatie aan een planten
+					database gekoppeld. Hierdoor wist de applicatie wat de
+					behoeften van elke plantensoort in de tuin waren.
+				</p>
+				<p>
+					Het project heeft geresulteerd in een webapplicatie die de
+					benodigde informatie toonde aan de gebruikers. Het product
+					is gedemonstreerd tijdens een beurs aan professionele
+					tuiniers. Zij waren zeer positief over de applicatie. Helaas
+					duurde mijn stage niet lang genoeg om dit project af te
+					kunnen ronden.
 				</p>
 			</>
 		),
