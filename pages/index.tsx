@@ -6,6 +6,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { NextPage } from "next";
+import Link from "next/link";
 import { CvCard } from "@root/components/cvCard";
 import { projects } from "@root/constants/projects";
 
@@ -62,6 +63,14 @@ export const AlbumPage: NextPage = () => (
 					beoefenen heb ik veel verschillende technieken en aanpakken
 					kunnen uitproberen.
 				</Typography>
+
+				<Box sx={{ display: "flex", justifyContent: "center" }}>
+					<Link href="/projects" passHref>
+						<Button variant="contained" color="primary">
+							Bekijk Portfolio
+						</Button>
+					</Link>
+				</Box>
 			</Container>
 		</Box>
 	</main>

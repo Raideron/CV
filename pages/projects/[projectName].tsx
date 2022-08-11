@@ -28,14 +28,14 @@ const ProjectPage: NextPage = () => {
 						align="center"
 						color="text.primary"
 						gutterBottom
-						sx={{ pb: 4 }}
+						sx={{ pb: 2 }}
 					>
 						{project.displayName}
 					</Typography>
 
 					{!!project.website && (
 						<Stack
-							sx={{ pb: 4 }}
+							sx={{ pb: 2 }}
 							direction="row"
 							spacing={2}
 							justifyContent="center"
@@ -50,11 +50,7 @@ const ProjectPage: NextPage = () => {
 						</Stack>
 					)}
 
-					<Typography
-						sx={{ pt: 4 }}
-						color="text.primary"
-						variant="body1"
-					>
+					<Typography color="text.primary" variant="body1">
 						{project.longDescription}
 					</Typography>
 				</Container>

@@ -176,10 +176,12 @@ const App = (props: AppProps) => {
 						<br />
 						<Button
 							variant="contained"
+							color="inherit"
 							sx={{
 								display: "flex",
 								alignItems: "center",
 								margin: "auto",
+								marginTop: 1,
 							}}
 							onClick={() => {
 								if (typeof window !== undefined) {
