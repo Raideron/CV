@@ -33,30 +33,28 @@ export const AlbumPage: NextPage = () => (
 					component="h2"
 					variant="subtitle1"
 					align="center"
-					color="text.primary"
+					color="text.secondary"
 					gutterBottom
 				>
-					Web Developer
+					Portfolio van een Web Developer
 				</Typography>
-				<Typography
-					variant="h5"
-					align="left"
-					color="text.secondary"
-					paragraph
-				>
+
+				<Typography align="left" paragraph>
+					Hallo, leuk dat je naar mijn portfolio kijkt. Ik hoop dat
+					hier wat leuke projecten staan die je aanspreken.
+				</Typography>
+
+				<Typography variant="h4" align="left">
+					Over mij
+				</Typography>
+				<Typography align="left" paragraph>
 					Ik vind het leuk om applicaties te bouwen die zowel snel
 					zijn en er goed uitzien. Het meest creatief ben ik wanneer
 					ik de wensen van de klant kan omzetten in een nieuw soort
 					webpagina. Hierbij vind ik het leuk om deze pagina zo
 					intuïtief mogelijk te laten voelen voor de gebruiker.
 				</Typography>
-
-				<Typography
-					variant="h5"
-					align="left"
-					color="text.secondary"
-					paragraph
-				>
+				<Typography align="left" paragraph>
 					Ik heb tijdens mijn loopbaan een diepgaande kennis opgebouwd
 					van React en TypeScript, ondersteund door .NET api&apos;s.
 					Door deze stack zowel in teamverband als individueel te
