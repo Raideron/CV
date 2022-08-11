@@ -2,6 +2,7 @@ import React from "react";
 import PrintableHeroesImg from "../public/PrintableHeroes.jpg";
 import SmartLinkImg from "../public/SmartLink2.png";
 import CertusImg from "../public/certus.jpg";
+import IrisImg from "../public/iris.png";
 import { Project } from "@root/types/project";
 
 export const projects: Project[] = [
@@ -16,6 +17,8 @@ export const projects: Project[] = [
 		name: "printableheroes",
 		image: PrintableHeroesImg,
 		website: "https://printableheroes.com",
+		startDate: new Date(2017, 11 - 1),
+		endDate: null,
 		shortDescription: (
 			<p>
 				PrintableHeroes is een website waar mensen afbeeldingen kunnen
@@ -76,6 +79,8 @@ export const projects: Project[] = [
 		name: "smartlink",
 		displayName: "SmartLink 2.0",
 		image: SmartLinkImg,
+		startDate: new Date(2018, 9 - 1),
+		endDate: new Date(2019, 9 - 1),
 		shortDescription: (
 			<>
 				<p>
@@ -141,6 +146,8 @@ export const projects: Project[] = [
 		name: "pass",
 		displayName: "PASS Webportaal",
 		image: CertusImg,
+		startDate: new Date(2019, 11 - 1),
+		endDate: new Date(2020, 12 - 1),
 		shortDescription: (
 			<>
 				<p>
@@ -192,6 +199,77 @@ export const projects: Project[] = [
 					dan ook niet voor een nieuw project kiezen. Desondanks deze
 					tekortkomingen ben ik tevreden met hoe we in het team hier
 					omheen hebben kunnen werken.
+				</p>
+			</>
+		),
+	},
+	{
+		name: "iris",
+		displayName: "Iris Webportaal",
+		image: IrisImg,
+		startDate: new Date(2020, 5 - 1),
+		endDate: new Date(2020, 9 - 1),
+		shortDescription: (
+			<>
+				<p>
+					Raster was een webportaal aan het bouwen waarmee ingenieurs
+					in een fabriek zelf een dashboard samen konden stellen. Dit
+					project heette Iris. Vanwege mijn ervaring met React en
+					Typescript was mij gevraagd om het team te versterken op dit
+					gebied. Ook heb ik het team geholpen met verschillende Scrum
+					onderdelen.
+				</p>
+			</>
+		),
+		longDescription: (
+			<>
+				<p>
+					Raster was een webportaal aan het bouwen waarmee ingenieurs
+					in een fabriek zelf een dashboard samen konden stellen. Dit
+					project heette Iris. Vanwege mijn ervaring met React en
+					Typescript was mij gevraagd om het team te versterken op dit
+					gebied.
+				</p>
+				<p>
+					Ik heb gewerkt aan het bouwen van een generiek data
+					overzicht en heb verbeteringen gemaakt aan de Typescript
+					implementatie. Hier heb ik de focus gelegd op het correct
+					gebruik van Typescript datatypes.
+				</p>
+				<p>
+					Verder heb ik meegeholpen met de migratie van Bitbucket naar
+					Azure DevOps. Dit gaf het team meer mogelijkheden voor het
+					nakijken van code. Hiervoor heb ik ook de bijbehorende
+					pipeline opgezet.
+				</p>
+				<p>
+					Ook heb ik het team geholpen met verschillende Scrum
+					onderdelen. Een aantal teamleden waren al zeer bekend met
+					het domein waarin werd gewerkt. Hierdoor leek er
+					geenbehoefte te zijn om taken zeer gedetailleerd te
+					beschrijven. Dit zorgde er soms voor dat het voor de
+					nieuwere teamleden niet duidelijk was wat er moest gebeuren.
+					Om dit te verbeteren heb ik het team begeleid in het
+					structureel inplannen van refinement vergaderingen en hoe
+					deze kunnen worden uitgevoerd zodat de taken goed omschreven
+					en ingeschat zijn. Ditzelfde is ook gebeurd voor de
+					restrospective vergaderingen.{" "}
+				</p>
+				<p>
+					Vanwege vraag vanuit een vorig project moest ik eerder
+					stoppen met dit project. Hierdoor heb ik niet het
+					eindresultaat van het product kunnen meemaken. Tijdens mijn
+					laatste overleg heeft het team laten weten zeer tevreden te
+					zijn met hulp en kennis die ik heb kunnen overdragen op het
+					gebied van Typescript en Scrum.{" "}
+				</p>
+				<p>
+					Ik vond dit een leuk project om aan te werken. Op technisch
+					vlak heb ik kunnen werken met React en Typescript, waar ik
+					een sterke voorkeur voor heb. Ook heb ik dit project voor
+					het eerst de kans gekregen om een team te begeleiden in
+					Scrum concepten. Dit vond ik erg leuk om te doen en hoop die
+					kans vaker te krijgen.
 				</p>
 			</>
 		),

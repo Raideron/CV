@@ -8,4 +8,6 @@ export interface Project {
 	longDescription: React.ReactNode;
 	image: StaticImageData;
 	website?: string;
+	startDate: Date;
+	endDate: Date | null;
 }

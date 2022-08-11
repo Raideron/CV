@@ -2,6 +2,7 @@ import React from "react";
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { useRouter } from "next/router";
 import { Typography, Box, Container, Stack, Button } from "@mui/material";
+import _ from "lodash";
 import { projects } from "@root/constants/projects";
 
 const ProjectPage: NextPage = () => {
@@ -12,6 +13,17 @@ const ProjectPage: NextPage = () => {
 	if (!project) {
 		return <></>;
 	}
+
+	const formatDate = (date: Date | null): string => {
+		if (date === null) {
+			return "heden";
+		}
+		return `${_.padStart(
+			`${date.getMonth() + 1}`,
+			2,
+			"0",
+		)}-${date.getFullYear()}`;
+	};
 
 	return (
 		<main>
@@ -27,9 +39,19 @@ const ProjectPage: NextPage = () => {
 						variant="h2"
 						align="center"
 						color="text.primary"
-						gutterBottom
 					>
 						{project.displayName}
+					</Typography>
+					<Typography
+						component="h1"
+						variant="subtitle1"
+						align="center"
+						color="text.secondary"
+						gutterBottom
+					>
+						{`${formatDate(project.startDate)} t/m ${formatDate(
+							project.endDate,
+						)}`}
 					</Typography>
 
 					{!!project.website && (

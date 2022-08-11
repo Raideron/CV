@@ -11,7 +11,6 @@ import { projects } from "@root/constants/projects";
 
 export const ProjectsOverviewPage: NextPage = () => (
 	<main>
-		{/* Hero unit */}
 		<Box
 			sx={{
 				bgcolor: "background.paper",
