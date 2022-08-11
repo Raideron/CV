@@ -23,14 +23,15 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Link from "next/link";
+import { Home, Share } from "@mui/icons-material";
+import { useRouter } from "next/router";
 import { projects } from "@root/constants/projects";
 
 const theme = createTheme();
 
 const App = (props: AppProps) => {
 	const { Component, pageProps } = props;
-
-	// const { window } = props;
+	const router = useRouter();
 	const [mobileOpen, setMobileOpen] = React.useState(false);
 
 	const handleDrawerToggle = () => {
@@ -41,11 +42,18 @@ const App = (props: AppProps) => {
 		<Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
 			<Link href={`/`} passHref>
 				<Typography variant="h6" sx={{ my: 2 }}>
-					CV
+					<Home />
 				</Typography>
 			</Link>
 			<Divider />
 			<List>
+				<Link href={`/projects`} passHref>
+					<ListItem disablePadding>
+						<ListItemButton sx={{ textAlign: "center" }}>
+							<ListItemText primary={"Portfolio"} />
+						</ListItemButton>
+					</ListItem>
+				</Link>
 				{projects.map((project) => (
 					<Link
 						key={project.name}
@@ -93,10 +101,13 @@ const App = (props: AppProps) => {
 								textDecoration: "none",
 							}}
 						>
-							CV
+							<Home />
 						</Typography>
 					</Link>
 					<Box sx={{ display: { xs: "none", sm: "inherit" } }}>
+						<Link href={`/projects`} passHref>
+							<Button sx={{ color: "#fff" }}>Portfolio</Button>
+						</Link>
 						{projects.map((project) => (
 							<Link
 								key={project.name}
@@ -139,7 +150,7 @@ const App = (props: AppProps) => {
 			<Component {...pageProps} />
 			<Box sx={{ bgcolor: "background.paper", p: 6 }} component="footer">
 				<Typography variant="h6" align="center" gutterBottom>
-					Footer
+					Contact
 				</Typography>
 				<Typography
 					variant="subtitle1"
@@ -147,7 +158,45 @@ const App = (props: AppProps) => {
 					color="text.secondary"
 					component="p"
 				>
-					Something here to give the footer a purpose!
+					<address>
+						Email:{" "}
+						<a href="mailto:alex.poley14@gmail.com">
+							alex.poley14@gmail.com
+						</a>
+						<br />
+						Telefoon: <a href="tel:+3126616567">+3126616567</a>
+						<br />
+						Website:{" "}
+						<Link href="/">
+							<a>
+								{typeof window !== "undefined" &&
+									window.location.origin + router.basePath}
+							</a>
+						</Link>
+						<br />
+						<Button
+							variant="contained"
+							sx={{
+								display: "flex",
+								alignItems: "center",
+								margin: "auto",
+							}}
+							onClick={() => {
+								if (typeof window !== undefined) {
+									const url =
+										window.location.origin +
+										router.basePath;
+									window.navigator?.share({
+										title: "Alex Poley",
+										url,
+									});
+								}
+							}}
+						>
+							Delen
+							<Share sx={{ ml: 1 }} />
+						</Button>
+					</address>
 				</Typography>
 			</Box>
 		</ThemeProvider>

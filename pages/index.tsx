@@ -25,41 +25,45 @@ export const AlbumPage: NextPage = () => (
 					variant="h2"
 					align="center"
 					color="text.primary"
+				>
+					Alex Poley
+				</Typography>
+				<Typography
+					component="h2"
+					variant="subtitle1"
+					align="center"
+					color="text.primary"
 					gutterBottom
 				>
-					Curriculum Vitae
+					Web Developer
 				</Typography>
 				<Typography
 					variant="h5"
-					align="center"
+					align="left"
 					color="text.secondary"
 					paragraph
 				>
-					Something short and leading about the collection below—its
-					contents, the creator, etc. Make it short and sweet, but not
-					too short so folks don&apos;t simply skip over it entirely.
+					Ik vind het leuk om applicaties te bouwen die zowel snel
+					zijn en er goed uitzien. Het meest creatief ben ik wanneer
+					ik de wensen van de klant kan omzetten in een nieuw soort
+					webpagina. Hierbij vind ik het leuk om deze pagina zo
+					intuïtief mogelijk te laten voelen voor de gebruiker.
 				</Typography>
-				<Stack
-					sx={{ pt: 4 }}
-					direction="row"
-					spacing={2}
-					justifyContent="center"
+
+				<Typography
+					variant="h5"
+					align="left"
+					color="text.secondary"
+					paragraph
 				>
-					<Button variant="contained">Main call to action</Button>
-					<Button variant="outlined">Secondary action</Button>
-				</Stack>
+					Ik heb tijdens mijn loopbaan een diepgaande kennis opgebouwd
+					van React en TypeScript, ondersteund door .NET api&apos;s.
+					Door deze stack zowel in teamverband als individueel te
+					beoefenen heb ik veel verschillende technieken en aanpakken
+					kunnen uitproberen.
+				</Typography>
 			</Container>
 		</Box>
-
-		<Container sx={{ py: 8 }} maxWidth="md">
-			<Grid container spacing={4}>
-				{projects.map((project) => (
-					<Grid item key={project.name} xs={12} sm={6} md={4}>
-						<CvCard project={project} />
-					</Grid>
-				))}
-			</Grid>
-		</Container>
 	</main>
 );
 
