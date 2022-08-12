@@ -148,7 +148,7 @@ const App = (props: AppProps) => {
 			</Box>
 
 			<Component {...pageProps} />
-			<Box sx={{ bgcolor: "background.paper", p: 6 }} component="footer">
+			<Box sx={{ bgcolor: "grey.100", p: 6 }} component="footer">
 				<Typography variant="h6" align="center" gutterBottom>
 					Contact
 				</Typography>

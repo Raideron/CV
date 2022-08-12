@@ -20,6 +20,21 @@ export const projects: Project[] = [
 		website: "https://printableheroes.com",
 		startDate: new Date(2017, 11 - 1),
 		endDate: null,
+		techList: [
+			"Azure Cloud Services",
+			"Azure DevOps",
+			"Bootstrap",
+			"C#.NET",
+			"Continious Deployment",
+			"Continious Integration",
+			"CSS",
+			"HTML",
+			"JavaScript",
+			"Next.JS",
+			"PostgreSQL",
+			"React.JS",
+			"TypeScript",
+		],
 		shortDescription: (
 			<p>
 				PrintableHeroes is een website waar mensen afbeeldingen kunnen
@@ -77,6 +92,20 @@ export const projects: Project[] = [
 		image: SmartLinkImg,
 		startDate: new Date(2018, 9 - 1),
 		endDate: new Date(2019, 9 - 1),
+		techList: [
+			"Azure Cloud Services",
+			"Azure DevOps",
+			"C#.NET",
+			"Continious Integration",
+			"CSS",
+			"HTML",
+			"JavaScript",
+			"Material Design",
+			"React.JS",
+			"Redis",
+			"SignalR",
+			"SQL Server",
+		],
 		shortDescription: (
 			<>
 				<p>
@@ -144,6 +173,17 @@ export const projects: Project[] = [
 		image: CertusImg,
 		startDate: new Date(2019, 11 - 1),
 		endDate: new Date(2020, 12 - 1),
+		techList: [
+			"AWS",
+			"C#.NET",
+			"CSS",
+			"HTML",
+			"JavaScript",
+			"Nuxt.JS",
+			"SignalR",
+			"TypeScript",
+			"Vue.JS",
+		],
 		shortDescription: (
 			<>
 				<p>
@@ -205,6 +245,17 @@ export const projects: Project[] = [
 		image: IrisImg,
 		startDate: new Date(2020, 5 - 1),
 		endDate: new Date(2020, 9 - 1),
+		techList: [
+			"Azure DevOps",
+			"Bootstrap",
+			"C#.NET",
+			"Continious Integration",
+			"CSS",
+			"HTML",
+			"JavaScript",
+			"React.JS",
+			"TypeScript",
+		],
 		shortDescription: (
 			<>
 				<p>
@@ -249,7 +300,7 @@ export const projects: Project[] = [
 					structureel inplannen van refinement vergaderingen en hoe
 					deze kunnen worden uitgevoerd zodat de taken goed omschreven
 					en ingeschat zijn. Ditzelfde is ook gebeurd voor de
-					restrospective vergaderingen.{" "}
+					restrospective vergaderingen.
 				</p>
 				<p>
 					Vanwege vraag vanuit een vorig project moest ik eerder
@@ -257,7 +308,7 @@ export const projects: Project[] = [
 					eindresultaat van het product kunnen meemaken. Tijdens mijn
 					laatste overleg heeft het team laten weten zeer tevreden te
 					zijn met hulp en kennis die ik heb kunnen overdragen op het
-					gebied van Typescript en Scrum.{" "}
+					gebied van Typescript en Scrum.
 				</p>
 				<p>
 					Ik vond dit een leuk project om aan te werken. Op technisch
@@ -276,6 +327,7 @@ export const projects: Project[] = [
 		image: ConnectedGardenImg,
 		startDate: new Date(2016, 9 - 1),
 		endDate: new Date(2017, 2 - 1),
+		techList: ["Bootstrap", "CSS", "HTML", "JavaScript", "Ruby on Rails"],
 		shortDescription: (
 			<>
 				<p>

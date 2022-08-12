@@ -4,6 +4,9 @@ import {
 	Typography,
 	CardActions,
 	Button,
+	Chip,
+	Stack,
+	Box,
 } from "@mui/material";
 import React from "react";
 import Link from "next/link";
@@ -33,6 +36,17 @@ export const CvCard: React.FC<CvCardProps> = (props) => (
 			<Typography gutterBottom variant="h5" component="h2">
 				{props.project.displayName}
 			</Typography>
+			<Box
+				sx={{
+					display: "flex",
+					gap: 1,
+					flexWrap: "wrap",
+				}}
+			>
+				{props.project.techList.map((tech) => (
+					<Chip key={tech} label={tech} size="small" />
+				))}
+			</Box>
 			<Typography>{props.project.shortDescription}</Typography>
 		</CardContent>
 		<CardActions>

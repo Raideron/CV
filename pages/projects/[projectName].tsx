@@ -1,7 +1,7 @@
 import React from "react";
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { useRouter } from "next/router";
-import { Typography, Box, Container, Stack, Button } from "@mui/material";
+import { Typography, Box, Container, Stack, Button, Chip } from "@mui/material";
 import _ from "lodash";
 import { projects } from "@root/constants/projects";
 
@@ -42,6 +42,17 @@ const ProjectPage: NextPage = () => {
 					>
 						{project.displayName}
 					</Typography>
+					<Box
+						sx={{
+							display: "flex",
+							gap: 1,
+							flexWrap: "wrap",
+						}}
+					>
+						{project.techList.map((tech) => (
+							<Chip key={tech} label={tech} />
+						))}
+					</Box>
 					<Typography
 						component="h1"
 						variant="subtitle1"

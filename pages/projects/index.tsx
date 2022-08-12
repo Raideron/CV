@@ -30,8 +30,8 @@ export const ProjectsOverviewPage: NextPage = () => (
 			</Container>
 		</Box>
 
-		<Container maxWidth="md">
-			<Grid container spacing={4}>
+		<Container maxWidth="md" sx={{ mb: 3 }}>
+			<Grid container spacing={3}>
 				{projects.map((project) => (
 					<Grid item key={project.name} xs={12} sm={6} md={4}>
 						<CvCard project={project} />

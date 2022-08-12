@@ -10,4 +10,32 @@ export interface Project {
 	website?: string;
 	startDate: Date;
 	endDate: Date | null;
+	techList: Tech[];
 }
+
+const techList = [
+	"React.JS",
+	"Next.JS",
+	"TypeScript",
+	"PostgreSQL",
+	"HTML",
+	"CSS",
+	"C#.NET",
+	"MQTT",
+	"Ruby on Rails",
+	"SQL Server",
+	"Azure Cloud Services",
+	"Bootstrap",
+	"Vue.JS",
+	"Nuxt.JS",
+	"AWS",
+	"JavaScript",
+	"Material Design",
+	"Azure DevOps",
+	"Continious Integration",
+	"Continious Deployment",
+	"Redis",
+	"SignalR",
+] as const;
+
+export type Tech = typeof techList[number];
