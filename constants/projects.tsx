@@ -87,87 +87,6 @@ export const projects: Project[] = [
 		),
 	},
 	{
-		name: "smartlink",
-		displayName: "SmartLink 2.0",
-		image: SmartLinkImg,
-		startDate: new Date(2018, 9 - 1),
-		endDate: new Date(2019, 9 - 1),
-		techList: [
-			"Azure Cloud Services",
-			"Azure DevOps",
-			"C#.NET",
-			"Continious Integration",
-			"CSS",
-			"HTML",
-			"JavaScript",
-			"Material Design",
-			"React.JS",
-			"Redis",
-			"SignalR",
-			"SQL Server",
-		],
-		shortDescription: (
-			<>
-				<p>
-					Als lid van het front-end team was het mijn taak om te
-					werken aan het portaal dat in React is gemaakt en de
-					bijbehorende API die is gemaakt met .NET Core 2.1. De API
-					werkte samen met een SQL server database en verschillende
-					externe API&apos;s om de benodigde data aan de gebruiker te
-					kunnen tonen.
-				</p>
-			</>
-		),
-		longDescription: (
-			<>
-				<p>
-					Smartlink 2.0 is een project voor Atlas Copco. Atlas Copco
-					is een bedrijf dat luchtcompressoren bouwt. Om deze
-					compressoren te monitoren kunnen klanten van Atlas Copco een
-					webportaal gebruiken dat informatie toont doormiddel van
-					onder andere grafieken en tabellen. Het bestaande portaal,
-					Smartlink 1, was erg langzaam en moest worden vervangen door
-					Smartlink 2.0.
-				</p>
-				<p>
-					Als lid van het front-end team was het mijn taak om te
-					werken aan het portaal dat in React is gemaakt en de
-					bijbehorende API die is gemaakt met .NET Core 2.1. De API
-					werkte samen met een SQL server database en verschillende
-					externe API&apos;s om de benodigde data aan de gebruiker te
-					kunnen tonen.
-				</p>
-				<p>
-					Binnen het project heb ik het meeste gewerkt met React. Ik
-					heb kunnen bijdragen aan het verbeteren van het project door
-					het gebruik van nieuwe JavaScript syntax, zoals bijvoorbeeld
-					async/await. Ik heb gewerkt aan het splitsen van
-					verantwoordelijkheden van stukken code. Door het toevoegen
-					en configureren van ESLint werd de JavaScript code
-					consistenter en was het makkelijker om fouten voor te zijn.
-					Mijn grootste bijdrage ligt in de performance van de React
-					code en het efficiënt toepassen van de response cache.
-				</p>
-				<p>
-					Het resultaat is een portaal dat miljoenen berichten kan
-					tonen op een manier die duidelijker is voor de gebruiker en
-					vele malen sneller dan Smartlink 1. De eerste gebruikers
-					worden op dit moment aangesloten op de nieuwe applicatie.
-				</p>
-				<p>
-					Ik ben erg tevreden met de mogelijkheid die ik heb gehad om
-					nieuwe technieken te leren. Ik heb binnen dit project veel
-					geleerd over het structureren van code in .NET Core. Voor
-					dit project had ik nog niet eerder met React gewerkt. Ik heb
-					hier veel over geleerd en zou hier ook zeker vaker mee
-					willen werken. In toekomstige React projecten zou ik echter
-					wel met Typescript/React willen werken in plaats van
-					JavaScript/React.
-				</p>
-			</>
-		),
-	},
-	{
 		name: "pass",
 		displayName: "PASS Webportaal",
 		image: CertusImg,
@@ -190,8 +109,7 @@ export const projects: Project[] = [
 					PASS is een systeem dat wordt gebruikt op container
 					terminals. Hierop wordt informatie getoond over treinen en
 					vrachtwagens. Ik heb een front-end gebouwd dat deze
-					informatie in real time kan weergeven. Dit systeem is
-					gebouwd met Vue.js, Nuxt.js, TypeScript en SignalR.
+					informatie in real time kan weergeven.
 				</p>
 			</>
 		),
@@ -259,12 +177,11 @@ export const projects: Project[] = [
 		shortDescription: (
 			<>
 				<p>
-					Raster was een webportaal aan het bouwen waarmee ingenieurs
-					in een fabriek zelf een dashboard samen konden stellen. Dit
-					project heette Iris. Vanwege mijn ervaring met React en
-					Typescript was mij gevraagd om het team te versterken op dit
-					gebied. Ook heb ik het team geholpen met verschillende Scrum
-					onderdelen.
+					Iris was een webportaal waarmee ingenieurs in een fabriek
+					zelf een dashboard samen konden stellen. Vanwege mijn
+					ervaring met React en Typescript was mij gevraagd om het
+					team te versterken. Ook heb ik het team geholpen met
+					verschillende Scrum onderdelen.
 				</p>
 			</>
 		),
@@ -322,6 +239,83 @@ export const projects: Project[] = [
 		),
 	},
 	{
+		name: "smartlink",
+		displayName: "SmartLink 2.0",
+		image: SmartLinkImg,
+		startDate: new Date(2018, 9 - 1),
+		endDate: new Date(2019, 9 - 1),
+		techList: [
+			"Azure Cloud Services",
+			"Azure DevOps",
+			"C#.NET",
+			"Continious Integration",
+			"CSS",
+			"HTML",
+			"JavaScript",
+			"Material Design",
+			"React.JS",
+			"Redis",
+			"SignalR",
+			"SQL Server",
+		],
+		shortDescription: (
+			<>
+				<p>
+					Smartlink 2.0 is een webportaal van Atlas Copco dat kan
+					worden gebruikt om luchtcompressoren te monitoren.
+				</p>
+			</>
+		),
+		longDescription: (
+			<>
+				<p>
+					Smartlink 2.0 is een project voor Atlas Copco. Atlas Copco
+					is een bedrijf dat luchtcompressoren bouwt. Om deze
+					compressoren te monitoren kunnen klanten van Atlas Copco een
+					webportaal gebruiken dat informatie toont doormiddel van
+					onder andere grafieken en tabellen. Het bestaande portaal,
+					Smartlink 1, was erg langzaam en moest worden vervangen door
+					Smartlink 2.0.
+				</p>
+				<p>
+					Als lid van het front-end team was het mijn taak om te
+					werken aan het portaal dat in React is gemaakt en de
+					bijbehorende API die is gemaakt met .NET Core 2.1. De API
+					werkte samen met een SQL server database en verschillende
+					externe API&apos;s om de benodigde data aan de gebruiker te
+					kunnen tonen.
+				</p>
+				<p>
+					Binnen het project heb ik het meeste gewerkt met React. Ik
+					heb kunnen bijdragen aan het verbeteren van het project door
+					het gebruik van nieuwe JavaScript syntax, zoals bijvoorbeeld
+					async/await. Ik heb gewerkt aan het splitsen van
+					verantwoordelijkheden van stukken code. Door het toevoegen
+					en configureren van ESLint werd de JavaScript code
+					consistenter en was het makkelijker om fouten voor te zijn.
+					Mijn grootste bijdrage ligt in de performance van de React
+					code en het efficiënt toepassen van de response cache.
+				</p>
+				<p>
+					Het resultaat is een portaal dat miljoenen berichten kan
+					tonen op een manier die duidelijker is voor de gebruiker en
+					vele malen sneller dan Smartlink 1. De eerste gebruikers
+					worden op dit moment aangesloten op de nieuwe applicatie.
+				</p>
+				<p>
+					Ik ben erg tevreden met de mogelijkheid die ik heb gehad om
+					nieuwe technieken te leren. Ik heb binnen dit project veel
+					geleerd over het structureren van code in .NET Core. Voor
+					dit project had ik nog niet eerder met React gewerkt. Ik heb
+					hier veel over geleerd en zou hier ook zeker vaker mee
+					willen werken. In toekomstige React projecten zou ik echter
+					wel met Typescript/React willen werken in plaats van
+					JavaScript/React.
+				</p>
+			</>
+		),
+	},
+	{
 		name: "connectedgarden",
 		displayName: "Connected Garden",
 		image: ConnectedGardenImg,
@@ -331,14 +325,10 @@ export const projects: Project[] = [
 		shortDescription: (
 			<>
 				<p>
-					Voor mijn eerste stage heb ik een webportaal gemaakt (Ruby
-					on Rails) dat gebruikt kon worden om tuinen te monitoren met
-					de sensoren daarin. Ik heb MQTT gebruikt om berichten van de
-					sensoren naar een SQL database te sturen. Deze data kon
-					vervolgens worden ingezien in het webportaal. De applicatie
-					kon de gebruikers dan een notificatie sturen wanneer ze hun
-					planten water moesten geven. Deze notificatie werd gegeneerd
-					aan de hand van de sensordata en data van Open Weather Maps.
+					Voor mijn eerste stage heb ik een webportaal gemaakt dat
+					gebruikt kon worden om tuinen te monitoren met de sensoren
+					daarin. De applicatie kon de gebruikers dan een notificatie
+					sturen wanneer ze hun planten water moesten geven.
 				</p>
 			</>
 		),
