@@ -82,7 +82,7 @@ const App = (props: AppProps) => {
 						aria-label="open drawer"
 						edge="start"
 						onClick={handleDrawerToggle}
-						sx={{ mr: 2, display: { sm: "none" } }}
+						sx={{ mr: 2, display: { md: "none" } }}
 					>
 						<MenuIcon />
 					</IconButton>
@@ -93,7 +93,7 @@ const App = (props: AppProps) => {
 							component="a"
 							sx={{
 								mr: 2,
-								display: { xs: "none", sm: "flex" },
+								display: { xs: "none", md: "flex" },
 								fontFamily: "monospace",
 								fontWeight: 700,
 								letterSpacing: ".3rem",
@@ -104,10 +104,11 @@ const App = (props: AppProps) => {
 							<Home />
 						</Typography>
 					</Link>
-					<Box sx={{ display: { xs: "none", sm: "inherit" } }}>
+					<Box sx={{ display: { xs: "none", md: "inherit" } }}>
 						<Link href={`/projects`} passHref>
 							<Button sx={{ color: "#fff" }}>Portfolio</Button>
 						</Link>
+
 						{projects.map((project) => (
 							<Link
 								key={project.name}
@@ -136,7 +137,7 @@ const App = (props: AppProps) => {
 						keepMounted: true, // Better open performance on mobile.
 					}}
 					sx={{
-						display: { xs: "block", sm: "none" },
+						display: { xs: "block", md: "none" },
 						"& .MuiDrawer-paper": {
 							boxSizing: "border-box",
 							width: 240,
