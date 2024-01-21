@@ -42,4 +42,4 @@ const techList = [
 	"Realm",
 ] as const;
 
-export type Tech = typeof techList[number];
+export type Tech = (typeof techList)[number];
