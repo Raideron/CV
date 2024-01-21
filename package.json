@@ -7,8 +7,9 @@
         "dev": "next",
         "build": "next build",
         "start": "next start",
+        "typecheck": "tsc --noEmit --pretty",
         "lint": "eslint . --max-warnings=0",
-        "check": "npm run lint && npm run build"
+        "check": "npm run typecheck && npm run lint"
     },
     "author": "Alex Poley",
     "dependencies": {
