@@ -172,7 +172,6 @@ const App = (props: AppProps) => {
 							<a>
 								{typeof window !== "undefined" &&
 									window.location.origin + router.basePath}
-									{router.route}
 							</a>
 						</Link>
 						<br />
