@@ -10,7 +10,7 @@ import Image from "next/image";
 import { useTheme } from "@mui/material";
 import AlexImg from "../public/alex2.jpg";
 
-export const AlbumPage: NextPage = () => {  
+export const AlbumPage: NextPage = () => {
 	const theme = useTheme();
 
 	return (

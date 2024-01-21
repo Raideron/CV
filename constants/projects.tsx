@@ -3,6 +3,7 @@ import PrintableHeroesImg from "../public/PrintableHeroes.jpg";
 import SmartLinkImg from "../public/SmartLink2.png";
 import CertusImg from "../public/certus.jpg";
 import IrisImg from "../public/iris.png";
+import QcOneImg from "../public/qcone.png";
 import ConnectedGardenImg from "../public/connectedgarden.jpg";
 import { Project } from "@root/types/project";
 
@@ -85,6 +86,54 @@ export const projects: Project[] = [
 				</p>
 			</>
 		),
+	},
+	{
+		name: "qcone",
+		displayName: (
+			<>
+				QC One
+				<wbr />
+				inspector app
+			</>
+		),
+		startDate: new Date(2021, 12 - 1),
+		endDate: null,
+		shortDescription: (
+			<>
+				<p>
+					De QC One inspector app wordt gebruikt om inspecties uit te
+					voeren op groente en fruit.
+				</p>
+			</>
+		),
+		longDescription: (
+			<>
+				<p>
+					QC One is een systeem dat wordt gebruikt om inspecties uit
+					te voeren op groente en fruit. De inspecties worden
+					uitgevoerd door inspecteurs die de QC One app gebruiken op
+					een mobiel apparaat. De inspecteurs kunnen de inspecties
+					uitvoeren zonder internetverbinding. De inspecties worden
+					vervolgens gesynchroniseerd met een centrale database.
+				</p>
+				<p>
+					In dit project was ik de lead developer van de app. Hiervoor
+					heb ik een team van 3 developers aangestuurd. Onze
+					voornaamste bezigheid in deze periode was de verouderde code
+					te updaten naar de nieuwste versie van React Native. Deze
+					was al jaren niet onderhouden. Tijdens dit traject hebben we
+					ook TypeScript toegevoegd aan het project.
+				</p>
+				<p>
+					Een andere uitdaging was het verbeteren van de sync tijd.
+					Door aansturing van zowel het app team als het backend team
+					is het gelukt om de sync tijd significant te verbeteren (van
+					een minuut naar enkele seconden).
+				</p>
+			</>
+		),
+		techList: ["React Native", "TypeScript", "Realm"],
+		image: QcOneImg,
 	},
 	{
 		name: "pass",

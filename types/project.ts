@@ -36,6 +36,10 @@ const techList = [
 	"Continious Deployment",
 	"Redis",
 	"SignalR",
+	"React Native",
+	"Android",
+	"iOS",
+	"Realm",
 ] as const;
 
 export type Tech = typeof techList[number];
