@@ -1,11 +1,11 @@
 import React from "react";
+import { Project } from "@root/types/project";
 import PrintableHeroesImg from "../public/PrintableHeroes.jpg";
 import SmartLinkImg from "../public/SmartLink2.png";
 import CertusImg from "../public/certus.jpg";
 import IrisImg from "../public/iris.png";
 import QcOneImg from "../public/qcone.png";
 import ConnectedGardenImg from "../public/connectedgarden.jpg";
-import { Project } from "@root/types/project";
 
 export const projects: Project[] = [
 	{
@@ -89,13 +89,7 @@ export const projects: Project[] = [
 	},
 	{
 		name: "qcone",
-		displayName: (
-			<>
-				QC One
-				<wbr />
-				inspector app
-			</>
-		),
+		displayName: <>QC One inspector app</>,
 		startDate: new Date(2021, 12 - 1),
 		endDate: null,
 		shortDescription: (
