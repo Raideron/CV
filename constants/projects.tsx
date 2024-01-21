@@ -5,6 +5,7 @@ import CertusImg from "../public/certus.jpg";
 import IrisImg from "../public/iris.png";
 import QcOneImg from "../public/qcone.png";
 import ConnectedGardenImg from "../public/connectedgarden.jpg";
+import EctImg from "../public/ect.jpg";
 import { Project } from "@root/types/project";
 
 export const projects: Project[] = [
@@ -96,7 +97,9 @@ export const projects: Project[] = [
 			<>
 				<p>
 					De QC One inspector app wordt gebruikt om inspecties uit te
-					voeren op groente en fruit.
+					voeren op groente en fruit. In dit project was ik de lead
+					developer van de app. Hiervoor heb ik een team van drie
+					mensen aangestuurd.
 				</p>
 			</>
 		),
@@ -112,7 +115,7 @@ export const projects: Project[] = [
 				</p>
 				<p>
 					In dit project was ik de lead developer van de app. Hiervoor
-					heb ik een team van 3 developers aangestuurd. Onze
+					heb ik een team van drie developers aangestuurd. Onze
 					voornaamste bezigheid in deze periode was de verouderde code
 					te updaten naar de nieuwste versie van React Native. Deze
 					was al jaren niet onderhouden. Tijdens dit traject hebben we
@@ -126,8 +129,57 @@ export const projects: Project[] = [
 				</p>
 			</>
 		),
-		techList: ["React Native", "TypeScript", "Realm"],
+		techList: ["React Native", "TypeScript", "Realm", "Scrum", "Jira"],
 		image: QcOneImg,
+	},
+	{
+		name: "ect",
+		displayName: "PAS Views Webportaal",
+		startDate: new Date(2021, 1 - 1),
+		endDate: new Date(2021, 11 - 1),
+		image: EctImg,
+		shortDescription: (
+			<>
+				<p>
+					PAS Views is een webportaal dat wordt gebruikt in de haven.
+					Dit portaal wordt gebruikt voor de planning van het laden en
+					lossen van containers. Voor dit project was ik frontend
+					developer. Ik heb hier gewerkt met React en Typescript.
+				</p>
+			</>
+		),
+		longDescription: (
+			<>
+				<p>
+					PAS Views is een webportaal dat wordt gebruikt in de haven.
+					Dit portaal wordt gebruikt voor de planning van het laden en
+					lossen van containers. Het portaal is onderdeel van het
+					PAS-systeem. Dit systeem wordt gebruikt door de grootste
+					container terminals in de wereld. Het systeem wordt gebruikt
+					om de containers te plannen die op een schip geladen en
+					gelost moeten worden evenals de containers die later op een
+					vrachtwagen moeten worden geladen.
+				</p>
+				<p>
+					Voor dit project was ik frontend developer. Ik heb hier
+					gewerkt met React en Typescript. De ontwikkeling van het
+					project was net begonnen toen ik bij het project kwam. Ik
+					was gevraagd het project te versterken vanwege mijn
+					expertise met React en Typescript.
+				</p>
+			</>
+		),
+		techList: [
+			"Jira",
+			"React.JS",
+			"CSS",
+			"HTML",
+			"JavaScript",
+			"SQL Server",
+			"Scrum",
+			"SignalR",
+			"TypeScript",
+		],
 	},
 	{
 		name: "pass",
