@@ -89,13 +89,7 @@ export const projects: Project[] = [
 	},
 	{
 		name: "qcone",
-		displayName: (
-			<>
-				QC One
-				<wbr />
-				inspector app
-			</>
-		),
+		displayName: <>QC One inspector app</>,
 		startDate: new Date(2021, 12 - 1),
 		endDate: null,
 		shortDescription: (
