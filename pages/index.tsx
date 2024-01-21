@@ -8,9 +8,9 @@ import { NextPage } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { useTheme } from "@mui/material";
-import AlexImg from "../public/alex.jpg";
+import AlexImg from "../public/alex2.jpg";
 
-export const AlbumPage: NextPage = () => {
+export const AlbumPage: NextPage = () => {  
 	const theme = useTheme();
 
 	return (

@@ -157,7 +157,7 @@ const App = (props: AppProps) => {
 					variant="subtitle1"
 					align="center"
 					color="text.secondary"
-					component="p"
+					// component="p"
 				>
 					<address>
 						Email:{" "}
@@ -172,6 +172,7 @@ const App = (props: AppProps) => {
 							<a>
 								{typeof window !== "undefined" &&
 									window.location.origin + router.basePath}
+									{router.route}
 							</a>
 						</Link>
 						<br />
