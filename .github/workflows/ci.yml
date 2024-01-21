@@ -21,8 +21,8 @@ jobs:
       - name: NPM clean install
         run: npm ci
 
+      - name: Type checking
+        run: npm run typecheck
+
       - name: Lint
         run: npm run lint
-      
-      - name: Type checking
-        run: npm run build

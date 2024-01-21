@@ -40,6 +40,8 @@ const techList = [
 	"Android",
 	"iOS",
 	"Realm",
+	"Scrum",
+	"Jira",
 ] as const;
 
 export type Tech = (typeof techList)[number];
