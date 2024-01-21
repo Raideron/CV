@@ -7,7 +7,8 @@
         "dev": "next",
         "build": "next build",
         "start": "next start",
-        "lint": "eslint . --max-warnings=0"
+        "lint": "eslint . --max-warnings=0",
+        "check": "npm run lint && npm run build"
     },
     "author": "Alex Poley",
     "dependencies": {
