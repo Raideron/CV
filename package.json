@@ -42,7 +42,7 @@
         "eslint-plugin-react-perf": "^3.3.2",
         "eslint-plugin-unicorn": "^51.0.1",
         "rimraf": "^5.0.5",
-        "sass": "~1.70.0",
+        "sass": "~1.71.0",
         "typescript": "^5.3.3"
     }
 }
