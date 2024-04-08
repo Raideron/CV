@@ -9,4 +9,4 @@ updates:
     directory: "/" # Location of package manifests
     open-pull-requests-limit: 50 # Maximum number of open pull requests per update run
     schedule:
-      interval: "weekly"
+      interval: "monthly"
