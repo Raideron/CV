@@ -8,5 +8,10 @@ updates:
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/" # Location of package manifests
     open-pull-requests-limit: 50 # Maximum number of open pull requests per update run
+    groups:
+      patch:
+        update-types: [patch]
+      minor:
+        update-types: [minor]
     schedule:
       interval: "monthly"
